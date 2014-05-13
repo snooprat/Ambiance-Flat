@@ -199,7 +199,7 @@ GtkSwitch.trough:active {
 .header-bar .entry.progressbar,
 .header-bar .entry.progressbar,
 .entry.progressbar {
-    border-radius: 8px;
+    border-radius: 0px;
     border-width: 0;
 }
 
@@ -305,22 +305,22 @@ GtkComboBox.combobox-entry .button:active:focus {
 
 .trough,
 .trough.highlight {
-    border-radius: 4px;
+    border-radius: 0px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
 }
 
 .trough {
-    border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
+    background-color: @base_color;
 }
 
 .trough.vertical {
-    border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
+    background-color: @base_color;
 }
 
 .trough.vertical {
-    border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
+    background-color: @base_color;
 }
 
 GtkSwitch.trough {
@@ -376,11 +376,13 @@ GtkSwitch.slider:active:insensitive {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focused {
-    border-image: url("assets/progressbar-horizontal-fill.png") 5 6 5 6 / 5px 6px 5px 6px stretch;
+    border-radius: 0px;
+    background-color: @selected_bg_color;
 }
 
 .progressbar.vertical {
-    border-image: url("assets/progressbar-vertical-fill.png") 6 5 6 5 / 6px 5px 6px 5px stretch;
+    border-radius: 0px;
+    background-color: @selected_bg_color;
 }
 
 .progressbar:backdrop,
@@ -388,11 +390,13 @@ GtkSwitch.slider:active:insensitive {
 .progressbar row:hover:backdrop,
 .progressbar row:selected:backdrop,
 .progressbar row:selected:focused:backdrop {
-    border-image: url("assets/progressbar-horizontal-fill-backdrop.png") 5 6 5 6 / 5px 6px 5px 6px stretch;
+    border-radius: 0px;
+    background-color: shade (@backdrop_selected_bg_color, 0.7);
 }
 
 .progressbar.vertical:backdrop {
-    border-image: url("assets/progressbar-vertical-fill-backdrop.png") 6 5 6 5 / 6px 5px 6px 5px stretch;
+    border-radius: 0px;
+    background-color: shade (@backdrop_selected_bg_color, 0.7);
 }
 
 .scale.trough {

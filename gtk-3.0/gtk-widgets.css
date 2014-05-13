@@ -504,7 +504,7 @@ row:selected {
 
 row:selected:backdrop {
     background-image: -gtk-gradient (linear, left bottom, left top,
-                                     from (shade (@backdrop_selected_bg_color, 1.06)),
+                                     from (shade (@backdrop_selected_bg_color, 1.0)),
                                      to (shade (@backdrop_selected_bg_color, 0.94)));
     border-top-color: shade (@backdrop_selected_bg_color, 0.9);
 
@@ -731,10 +731,11 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 .header-bar .entry.progressbar,
 .header-bar .entry.progressbar,
 .entry.progressbar {
-    background-image: -gtk-gradient (linear, left top, left bottom,
+    /*background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 0.8)),
                                      color-stop (0.1, shade (@selected_bg_color, 0.9)),
-                                     to (shade (@selected_bg_color, 1.1)));
+                                     to (shade (@selected_bg_color, 1.1)));*/
+	background-color: @selected_bg_color;
     border-width: 0;
 
     color: @selected_fg_color;
@@ -1291,7 +1292,7 @@ GtkComboBox .menu .menuitem *:insensitive {
  *************************/
 GtkScale,
 GtkProgressBar {
-    border-radius: 8px;
+    border-radius: 0px;
     border-width: 0px;
     padding: 1px;
 }
@@ -1312,10 +1313,10 @@ GtkProgressBar {
 .progressbar row:selected,
 .progressbar row:selected:focused,
 .progressbar row:nth-child(odd) {
-    border-radius: 8px;
+    border-radius: 0px;
     border-width: 0px;
     background-image: none;
-    background-color: #db6a3c;
+    background-color: @selected_bg_color;
     border-style: solid;
 }
 
@@ -1326,10 +1327,10 @@ GtkProgressBar {
 .progressbar row:selected:focused:backdrop,
 .scale.highlight.bottom:backdrop,
 .progressbar.vertical:backdrop {
-    border-radius: 8px;
+    border-radius: 0px;
     border-width: 0px;
     background-image: none;
-    background-color: #b0b0b0;
+    background-color: shade (@backdrop_selected_bg_color, 0.7);
 }
 
 .scale.highlight.left:insensitive {
@@ -1349,9 +1350,10 @@ GtkProgressBar {
 .trough row:hover,
 .trough row:selected,
 .trough row:selected:focused {
-    background-image: -gtk-gradient (linear, left top, left bottom,
+    /*background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#d1d1d1),
-                                     to (#e8e8e8));
+                                     to (#e8e8e8));*/
+	background-color: #d1d1d1;
     border-style: solid;
     border-width: 1px;
 
@@ -1359,9 +1361,10 @@ GtkProgressBar {
 }
 
 .trough.vertical {
-    background-image: -gtk-gradient (linear, left top, right top,
+    /*background-image: -gtk-gradient (linear, left top, right top,
                                      from (#d1d1d1),
-                                     to (#e8e8e8));
+                                     to (#e8e8e8));*/
+	background-color: #d1d1d1;
 }
 
 /* level bars as used for password quality or remaining power */
