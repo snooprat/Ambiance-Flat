@@ -96,14 +96,14 @@ style "default" {
 	engine "murrine" {
 		contrast = 0.6
 		arrowstyle = 2
-		reliefstyle = 3
+		reliefstyle = 0
 		highlight_shade = 1.0
 		glazestyle = 0
 		default_button_color = shade (1.1, @selected_bg_color)
-		gradient_shades = {1.1, 1.0, 1.0, 0.9}
-		roundness = 4
-		lightborder_shade = 1.26
-		lightborderstyle = 1
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
+		roundness = 2
+		lightborder_shade = 1.0
+		lightborderstyle = 0
 		listviewstyle = 2
 		progressbarstyle = 0
 		colorize_scrollbar = FALSE
@@ -237,13 +237,13 @@ style "scrollbar" = "button" {
 	engine "murrine"
 	{
 		border_shades = {0.95, 0.90}
-		roundness = 20
+		roundness = 0
 		contrast = 1.0
 		trough_shades = {0.92, 0.98}
 		lightborder_shade = 1.3
 		glowstyle = 5
 		glow_shade = 1.02
-		gradient_shades = {1.2, 1.0, 1.0, 0.86}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		trough_border_shades = {0.9, 0.98}
 	}
 }
@@ -269,9 +269,9 @@ style "scale" = "button" {
 	engine "murrine" {
 		contrast = 0.6
 		border_shades = {0.9, 0.8}
-		roundness = 5
+		roundness = 2
 		lightborder_shade = 1.32
-		gradient_shades = {1.1, 1.0, 1.0, 0.8}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		handlestyle = 2
 		trough_border_shades = {0.9, 1.4}
 		glow_shade = 1.0
@@ -293,11 +293,11 @@ style "notebook" {
 	ythickness = 2
 	
 	engine "murrine" {
-		roundness = 3
+		roundness = 2
 		contrast = 0.8
 		focusstyle = 2
 		lightborder_shade = 1.16
-		gradient_shades = {1.1, 1.0, 1.0, 0.68}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 	}
 }
 
@@ -369,12 +369,12 @@ style "menubar_item" = "menu" {
 	ythickness = 3
 
 	engine "murrine" {
-		gradient_shades = {1.1, 1.0, 1.0, 0.88}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		glowstyle = 5
 		glow_shade = 1.0
 		border_shades = {1.0, 0.9}
-		lightborderstyle = 3
-		lightborder_shade = 1.26
+		lightborderstyle = 0
+		lightborder_shade = 1.0
 	}
 }
 
@@ -386,7 +386,7 @@ style "scale_menu_item" = "scale" {
 	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
 	engine "murrine" {
-		roundness = 20
+		roundness = 2
 		border_shades = {1.4, 1.4}
 		reliefstyle = 0
 		lightborder_shade = 1.36
@@ -435,7 +435,7 @@ style "treeview" {
 	{
 		roundness = 2
 		lightborder_shade = 1.1
-		gradient_shades = {1.04, 1.0, 1.0, 0.96}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 	}
 }
 
@@ -449,12 +449,12 @@ style "progressbar" {
 
 	engine "murrine" {
 		#trough_shades = {0.98, 1.02}
-		roundness = 8
-		lightborderstyle = 1
-		lightborder_shade = 1.26
-		border_shades = {0.95, 0.85}
-		gradient_shades = {1.1, 1.0, 1.0, 0.9}
-		trough_border_shades = {0.9, 1.4}
+		roundness = 2
+		lightborderstyle = 0
+		lightborder_shade = 1.0
+		border_shades = {0.95, 0.95}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
+		trough_border_shades = {0.9, 0.9}
 	}
 }
 
@@ -499,8 +499,8 @@ style "radiocheck"  = "button" {
 	fg[ACTIVE] = @fg_color
 
 	engine "murrine" {
-		reliefstyle = 3
-		gradient_shades = {1.2, 1.0, 1.0, 0.9}
+		reliefstyle = 0
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		shadow_shades = {0.6, 0.5}
 		textstyle = 0
 	}
@@ -544,7 +544,7 @@ style "calendar_menu_item" = "calendar" {
 
 style "iconview" {
 	engine "murrine" {
-		roundness = 6
+		roundness = 2
 		border_shades = {1.16, 1.0}
 		glow_shade = 1.1
 		glowstyle = 5
