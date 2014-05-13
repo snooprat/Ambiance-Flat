@@ -1934,9 +1934,10 @@ GtkTextView {
 .header-bar {
     -GtkWidget-window-dragging: true;
 
-    background-image: -gtk-gradient (linear, left top, left bottom,
+    background-image: none;/*-gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.96)),
-                                     to (shade (@dark_bg_color, 1.4)));
+                                     to (shade (@dark_bg_color, 1.4)));*/
+	background-color: shade (@dark_bg_color,1.1);
     border-bottom-color: shade (@dark_bg_color, 1.1);
     border-top-color: shade (@dark_bg_color, 1.09);
     border-style: solid;
