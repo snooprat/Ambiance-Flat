@@ -91,7 +91,7 @@ style "default" {
 	base[PRELIGHT]    = shade (0.98, @bg_color)
 	base[SELECTED]    = @selected_bg_color
 	base[INSENSITIVE] = shade (0.97, @bg_color)
-	base[ACTIVE]      = shade (0.94, @selected_bg_color)
+	base[ACTIVE]      = @selected_bg_color
 
 	engine "murrine" {
 		contrast = 0.6
