@@ -9,7 +9,7 @@ NautilusDesktopWindow GtkWidget {
 }
 
 .nautilus-canvas-item {
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 /* desktop mode */
@@ -94,7 +94,7 @@ NautilusSearchBar .entry {
 
 NautilusFloatingBar {
     background-color: @info_bg_color;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0px 0px 0 0;
     border-style: solid;
     border-width: 1px;
     border-color: darker (@info_bg_color);

@@ -1933,11 +1933,11 @@ GtkTextView {
 .menubar.toolbar,
 .header-bar {
     -GtkWidget-window-dragging: true;
-
+    border-radius: 0px;
     background-image: none;/*-gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.96)),
                                      to (shade (@dark_bg_color, 1.4)));*/
-	background-color: shade (@dark_bg_color,1.1);
+    background-color: shade (@dark_bg_color,1.1);
     border-bottom-color: shade (@dark_bg_color, 1.1);
     border-top-color: shade (@dark_bg_color, 1.09);
     border-style: solid;
@@ -1955,9 +1955,9 @@ GtkTextView {
 .menubar.toolbar.toolbar:backdrop,
 .header-bar:backdrop {
     background-image: none;
-    background-color: @dark_bg_color;
+    background-color: shade (@backdrop_dark_bg_color, 1.0);
     box-shadow: none;
-    border-top-color: @dark_bg_color;
+    border-top-color: @backdrop_dark_bg_color;
     border-bottom-color: shade (@dark_bg_color, 0.9);
 
     color: @backdrop_dark_fg_color;
